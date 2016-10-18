@@ -18,3 +18,9 @@ To deploy on heroku create the required config vars:
 ## Prerequisites:
 1. Sendgrid Api, signup here : [Signup on Sendgrid](https://app.sendgrid.com/signup)
 2. Reddit App, how to create: [How to Create Reddit App](https://ssl.reddit.com/prefs/apps/)
+
+### Run on heroku as detached dyno
+
+```python
+heroku run:detached python xbox_bot.py
+```

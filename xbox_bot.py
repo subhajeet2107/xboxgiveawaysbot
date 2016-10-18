@@ -44,7 +44,7 @@ def process_submission(submission):
 
 	for words in submission_title.split(' '):
 		#this is done for testing heroku one off dynos, checking if the process keeps on running or not
-		print "Hearbeat..." + str(words)
+		print "Hearbeat..." + str(words.encode('ascii', 'ignore').decode('ascii'))
 		if words.strip() in giveaways_keywords:
 			send_mail(submission=submission)
 
