@@ -1,4 +1,4 @@
 praw==4.0.0b20
 prawcore==0.2.1
-yagmail==0.5.147
+sendgrid==2.2.1
 python-dotenv==0.6.0
